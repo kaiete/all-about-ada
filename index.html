@@ -39,25 +39,17 @@
             margin: 100in;
             margin-left: 100in;
         }
-        #wiki-quote-1 {
-            margin: 0px 10% 0px 10%;
+        li {
+            margin: auto;
+            text-align: center;
+            padding: auto;
+            width: fit-content;
+            word-wrap: normal;
         }
-        .onhover {
-            transition: color .35s ease-in-out;
-            /*hiiii*/
-            color: white;
-            display: inline;
-            height: .3in;
-        }
-        .onhover:hover {
-            color: black;
-            display: inline;
-            height: .3in;
-            padding: none;
-            margin: none;
-        }
-        details > ::after {
-            display: inline;
+        img {
+            width: 50%;
+            height: auto;
+            border-radius: 4%;
         }
     </style>
     <script>
@@ -71,31 +63,38 @@
     </script>
 </head>
 <body>
-    <h3><i>All About...</i></h3>
+    <h2>
+        <i>
+            All About...
+        </i>
+    </h2>
     <h1>
-        Ada Lovelace
+        Ada Lovelace!
     </h1>
     <p onclick="document.getElementById('birthanddeath').open = true">Birth and death</p>
     <details id="birthanddeath">
         <summary></summary>
         <div class="dialog">
-            <h3>Birth: 1815<br>Death: 1852</h3>
+            <h3>Birth: 10 Dec 1815<br>Death: 27 Nov 1852<br>She died of uterine cancer when she was 36.<br>She died in Marylebone, UK.<br>She was born in London, UK.</h3>
             <p class="close" onclick="document.getElementById('birthanddeath').open = false"><b>Close</b></p>
         </div>
     </details>
-    <details id="childhoodevents">
-        <summary>Childhood Events<i class="onhover"><br>Click to toggle</i></summary>
-        <div class="dialog">
-            When she was a child, she often experienced headaches that would impair her sight.
-        </div>
-    </details>
-    <p onclick="document.getElementById('family').open = true">Family</p>
-    <details id="family">
+    <p onclick="document.getElementById('facts').open = true">Facts</p>
+    <details id="facts">
         <summary></summary>
         <div class="dialog">
-
-            <b class="close" onclick="document.getElementById('family').open = false">Close</b>
+            <p id="facts-1"><i>From <a href="https://www.history.com/news/10-things-you-may-not-know-about-ada-lovelace">History.com</a> unless specified otherwise</i><br>
+                <ul>
+                    <li>Her father was Lord Byron.</li>
+                    <li>When she was 12, Ada envisioned a flying machine!</li>
+                    <li>Her mentor was Charles Babbage.</li>
+                    <li>Her favourite color was purple. <cite style="display: inline;">From <a href="http://gnoga.com">here</a></cite></li>
+                    <li>Her mother told her to study math and science, because she was worried that Ada would become mad if she studied poetry.</li>
+                    
+                </ul>
+            <b class="close" onclick="document.getElementById('facts').open = false">Close</b>
         </div>
     </details>
+    <img src="ada.jpg" alt="A picture of Ada Lovelace">
 </body>
 </html>
