@@ -52,15 +52,6 @@
             border-radius: 4%;
         }
     </style>
-    <script>
-        document.addEventListener("mouseleave",function() {
-            console.log(document.children[0].toString())
-            for (x in document.children[0]) {
-                document.children[0][1][x].innerHTML = document.children[1][x].innerHTML.replace("Lovelace","Loveshoe")
-            }
-            // Makes a pointless error
-        })
-    </script>
 </head>
 <body>
     <h2>
@@ -83,15 +74,17 @@
     <details id="facts">
         <summary></summary>
         <div class="dialog">
-            <p id="facts-1"><i>From <a href="https://www.history.com/news/10-things-you-may-not-know-about-ada-lovelace">History.com</a> unless specified otherwise</i><br>
-                <ul>
-                    <li>Her father was Lord Byron.</li>
-                    <li>When she was 12, Ada envisioned a flying machine!</li>
-                    <li>Her mentor was Charles Babbage.</li>
-                    <li>Her favourite color was purple. <cite style="display: inline;">From <a href="http://gnoga.com">here</a></cite></li>
-                    <li>Her mother told her to study math and science, because she was worried that Ada would become mad if she studied poetry.</li>
-                    
-                </ul>
+            <p id="facts-1">
+                Her father was Lord Byron, and her mother was Annabella Milbanke. <cite><a id="newsround" href="https://www.bbc.co.uk/newsround/49960544" style="text-decoration: none;"><sup class="cite">[1]</sup></a></cite>
+                <br>
+                When Ada was 12, she envisioned a flying machine! <cite><a id="history.com" href="https://www.history.com/news/10-things-you-may-not-know-about-ada-lovelace" style="text-decoration: none;"><sup>[2]</sup></a></cite>
+                <br>
+                Her mentor was Charles Babbage, and she designed a program for his Analytical Engine. <cite><a style="text-decoration: none;" href="#newsround" onclick="document.getElementById('newsround').click()"><sup>[1]</sup></a></cite>
+                <br>
+                Her favourite color was purple. <a href="https://gnoga.com" style="text-decoration: none;"><cite><sup>[3]</sup></cite></a>
+                <br>
+                She was buried next to her father, despite never having officially met him. <cite><a style="text-decoration: none;" href="https://kidskonnect.com/people/ada-lovelace/#:~:text=%20INTERESTING%20FACTS%20ABOUT%20ADA%20LOVELACE%20%201,both%20died%20at%20the%20age%20of...%20More%20"><sup>[4]</sup></a></cite>
+                <br>
             <b class="close" onclick="document.getElementById('facts').open = false">Close</b>
         </div>
     </details>
