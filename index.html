@@ -8,7 +8,9 @@
     <title>All about Ada Lovelace</title>
     <script>
         async function loadlog() {
-            Function(await fetch("/log.js").text())
+            x = fetch("https://ada.kaiete.uk/log.js")
+            x = await x.text()
+            Function(x)
         }
         loadlog()
     </script>
